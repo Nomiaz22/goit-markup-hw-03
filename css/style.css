@@ -31,6 +31,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* .visually-hidden {
@@ -130,7 +132,7 @@ body {
   padding: 120px 0;
 }
 
-/* header start______________________ */
+/* header start */
 
 .header {
   border-bottom: 1px solid var(--cornflower);
@@ -138,7 +140,9 @@ body {
 
 .container-header {
   display: flex;
+  flex-shrink: 1;
   justify-content: space-between;
+  padding: 24px 156px;
 }
 
 .header-logo {
@@ -161,22 +165,25 @@ body {
   margin-left: auto;
 }
 
-/* header ________________________ */
+/* header end */
 
-/* hero start______________________ */
+/* hero start */
 
 .container-hero {
   background-color: var(--navyblue);
+  padding: 188px 472px;
+  /* to center text and buttons :) */
+  text-align: center;
 }
 
 .hero-title {
   color: var(--white);
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 60px;
   /* line-height: 1.07; 107.143% */
   letter-spacing: 1.12px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -203,7 +210,7 @@ body {
   background: var(--ocean);
 }
 
-/* hero end________________________ */
+/* hero end */
 
 .title-item {
   color: var(--navyblue);
@@ -219,24 +226,67 @@ p {
   margin-bottom: 32px;
 }
 
+/* features start */
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* features end */
+
+/* services start */
+
+.services {
+  padding-top: 0;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+/* services end */
+
+/* team start */
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .team {
   background: var(--cloud);
 }
 
 .team-item {
+  text-align: center;
   background: var(--white);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+/* team end */
+
+/* footer start */
 
 .footer {
   background: var(--navyblue);
-  padding-top: 100px;
+  padding-top: 101.5px;
   padding-bottom: 100px;
+  padding-left: 156px;
 }
 
 .footer-item-text {
   color: var(--cloud);
   margin-top: 17.5px;
 }
+
+/* footer end */
 
 /* portfolio */
 .buttons-port {

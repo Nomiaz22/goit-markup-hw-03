@@ -262,7 +262,7 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
+  }
 
 .card-team-text {
   text-align: center;
@@ -271,7 +271,7 @@ img {
 /* team end */
 
 /* footer start */
-.footer{
+.footer {
   background-color: var(--navyblue);
   padding: 100px 0;
 }
@@ -305,7 +305,7 @@ flex-direction: column;
 
 .buttons-port:hover,
 .buttons-port:focus,
-.current-filter {
+.current-active {
   color: var(--white);
   background: var(--ocean);
   border-color: var(--ocean);
@@ -315,13 +315,28 @@ flex-direction: column;
 
 .port-buttons-list {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   gap: 24px;
   margin-bottom: 72px;
 }
-.projects-no-padding-top {
+
+.projects-other-padding-top {
     padding-top: 96px;
+}
+
+.projects-list {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-projects-text {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
 }
 /* portfolio end */
